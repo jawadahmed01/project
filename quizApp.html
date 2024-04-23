@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./quiz.js" defer></script>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container2">
+        <h1>Student Details</h1>
+        <form action="">
+          <div class="formDetails">
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              class="detailsinput"
+              required
+            />
+          </div>
+          <div class="formDetails">
+            <input
+              type="text"
+              id="roll-no"
+              class="detailsinput"
+              placeholder="Roll Number"
+              required
+            />
+          </div>
+          <div class="formDetails">
+            <input
+              type="text"
+              id="batch"
+              class="detailsinput"
+              placeholder="Batch"
+              required
+            />
+          </div>
+          <div class="formDetails">
+            <input
+              type="text"
+              id="section"
+              class="detailsinput"
+              placeholder="Section"
+              required
+            />
+          </div>
+          <input type="button" value="Submit" id="details-btn" />
+        </form>
+      </div>
+      <div class="container">
+        <h2 id="question">Question Tag</h2>
+
+        <ul>
+          <li>
+            <input
+              type="radio"
+              class="radio-btn"
+              id="input-option-a"
+              name="option"
+            />
+            <label for="input-option-a">Option A</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              class="radio-btn"
+              id="input-option-b"
+              name="option"
+            />
+            <label for="input-option-b">Option B</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              class="radio-btn"
+              id="input-option-c"
+              name="option"
+            />
+            <label for="input-option-c">Option C</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              class="radio-btn"
+              id="input-option-d"
+              name="option"
+            />
+            <label for="input-option-d">Option D</label>
+          </li>
+        </ul>
+        <button id="submit-btn">Submit</button>
+      </div>
+
+      <div class="container3">
+        <h1>Show result</h1>
+
+        <div class="show">
+          <h3>Name : <span id="showName">Show Name</span></h3>
+          <h3>Roll No : <span id="showRollNo">Show Roll No</span></h3>
+          <h3>Batch : <span id="showBatch">Show Batch</span></h3>
+          <h3>Section : <span id="showsection">Show section</span></h3>
+          <h3>Marks : <span id="showMark">Show Marks</span></h3>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
